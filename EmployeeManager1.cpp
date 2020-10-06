@@ -21,6 +21,7 @@ public:
 	{
 		cout << "name : " << name << endl;
 		cout << "salary : " << salary << endl;
+		cout<<endl;
 	}
 
 };
