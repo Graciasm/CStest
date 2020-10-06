@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cstring>
 using namespace std;
+
 class PermanentWorker
 {
 private:
@@ -21,7 +22,7 @@ public:
 		cout << "name : " << name << endl;
 		cout << "salary : " << salary << endl;
 	}
-	
+
 };
 class EmployeeHandler
 {
@@ -30,18 +31,18 @@ private:
 	int empNum;
 public:
 	EmployeeHandler() : empNum(0)
-	{ } // emplist´Â 0À¸·Î ÀÚµ¿ ÃÊ±âÈ­ µÇ´Â µí ÇÏ´Ù. empnumÀº ¼öµ¿À¸·Î 0À¸·Î ÃÊ±âÈ­ ÇØ Áá´Ù.
+	{ } // emplistï¿½ï¿½ 0ï¿½ï¿½ï¿½ï¿½ ï¿½Úµï¿½ ï¿½Ê±ï¿½È­ ï¿½Ç´ï¿½ ï¿½ï¿½ ï¿½Ï´ï¿½. empnumï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 0ï¿½ï¿½ï¿½ï¿½ ï¿½Ê±ï¿½È­ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½.
 	void AddEmployee(PermanentWorker* emp)
 	{
 		empList[empNum++] = emp;
 	}
-	//¸ðµç Á÷¿øÀÇ ÀÌ¹ø´Þ ±Þ¿© ³»¿ª Ãâ·Â
+	//ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¹ï¿½ï¿½ï¿½ ï¿½Þ¿ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	void ShowAllSalaryInfo() const
 	{
 		for (int i = 0; i < empNum; i++)
 			empList[i]->ShowSalaryInfo();
 	}
-	//ÀÌ¹ø´Þ ±Þ¿©ÀÇ ÃÑ¾× Ãâ·Â
+	//ï¿½Ì¹ï¿½ï¿½ï¿½ ï¿½Þ¿ï¿½ï¿½ï¿½ ï¿½Ñ¾ï¿½ ï¿½ï¿½ï¿½ï¿½
 	void ShowTotalSalary() const
 	{
 		int sum = 0;
